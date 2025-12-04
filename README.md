@@ -59,7 +59,7 @@ sudo insmod lunix.ko
 
 ### 3. Attach the Line Discipline
 To start receiving data from the sensors, you need to attach the Lunix line discipline to the serial port where the base station is connected (e.g., `/dev/ttyS0`).
-
+> **Serial Port Connection**: In the context of this exercise the data from the sensors are recieved with the use of a TCP socket that is attached to the Serial Port of linux.
 ```bash
 ./lunix-attach /dev/ttyS0
 ```
